@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="keywords"
+      content="saúde, esporte, corrida, monitoramento, ciclismo"
+    />
+    <!-- App CSS -->
+    <link rel="stylesheet" href="./create_account.css" />
+    <link rel="stylesheet" href="../../shared/shared.css" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- Google Icon -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <title>:.Health Track.:</title>
+  </head>
+  <body>
+    <section
+      class="home container-fluid d-flex flex-row justify-content-around"
+    >
+      <header
+        class="title d-flex flex-column align-items-center align-self-center"
+      >
+        <div class="logoBody">
+          <h1>Health Track</h1>
+          <small
+            >With you
+            <span class="material-icons"> directions_run </span></small
+          >
+        </div>
+      </header>
+      <form
+        class="main d-flex flex-column align-self-center"
+        action="../../index.html"
+      >
+        <label for="inputCreateEmail" class="form-label">E-mail</label>
+        <input
+          required
+          type="email"
+          class="form-control"
+          id="inputCreateEmail"
+          placeholder="Digite um e-mail válido"
+          required
+        />
+        <label for="inputCreatePassword" class="form-label"
+          >Digitar senha</label
+        >
+        <input
+          type="text"
+          class="form-control"
+          id="inputCreatePassword"
+          placeholder="Digite uma senha"
+          required
+        />
+        <label for="inputConfirmPassword" class="form-label"
+          >Confirmar senha</label
+        >
+        <input
+          type="text"
+          class="form-control"
+          id="inputConfirmPassword"
+          placeholder="Confirme sua senha"
+          required
+        />
+        <div class="form-check form-check-inline">
+          <input
+            id="CheckMkt"
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            checked
+          />
+          <label class="form-check-label" type="checkbox" for="CheckMkt">
+            <small
+              >Concordo em receber informações e ofertas comerciais sobre o
+              Health Track</small
+            >
+          </label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            id="CheckTermos"
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            required
+          />
+          <label class="form-check-label" for="CheckTermos">
+            <small
+              ><a data-bs-toggle="modal" data-bs-target="#termsModal" href=""
+                >Li e aceito os termos de serviço</a
+              ></small
+            >
+          </label>
+        </div>
+        <!--Modal-->
+        <div
+          class="modal fade"
+          id="termsModal"
+          tabindex="-1"
+          aria-labelledby="modalTermos"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="text-center modal-title" id="modalTermos">
+                  Termos de serviços - Health Track
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Eligendi dolor reprehenderit autem quos sapiente atque veritatis
+                ex, veniam incidunt sit quo laborum odio. Possimus, est
+                doloremque quam assumenda quis vero. Distinctio, non assumenda.
+                Inventore odio delectus sed veniam velit, iusto, placeat
+                voluptatem vitae tenetur voluptatibus pariatur reiciendis a
+                rerum. Aut animi modi accusamus qui unde. Optio cumque nam vel
+                at. Ipsum excepturi sint nemo. Repellat, ratione ad culpa
+                maiores, iure quia possimus aliquid nisi aspernatur eligendi
+                deserunt. Eos corporis iusto quaerat, neque voluptate voluptates
+                accusamus dolor aspernatur repudiandae itaque officia. Labore,
+                reprehenderit placeat ducimus aut nihil quia maiores eius iure
+                officiis repudiandae hic odio eligendi ipsum doloribus quae
+                nulla modi temporibus quaerat corrupti aliquam. Quos est
+                voluptatem recusandae porro illo. Minima quidem error veniam
+                earum commodi ea laborum recusandae optio cupiditate placeat.
+                Laudantium rem eaque quaerat ipsam deserunt. Ad quasi neque
+                maxime maiores incidunt! Ipsa deleniti doloribus exercitationem
+                earum eaque?
+              </div>
+            </div>
+          </div>
+        </div>
+        <button type="submit" class="d-block btn btn-primary">
+          Criar uma conta
+        </button>
+      </form>
+    </section>
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

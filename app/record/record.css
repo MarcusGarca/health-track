@@ -1,0 +1,82 @@
+/* Altura da div principial da app */
+.home {
+  height: calc(100vh - 58px);
+}
+
+/* Estilo da div esquerda da app */
+.title {
+  border-radius: 5px 0 0 5px;
+  padding: 10px;
+  height: 70%;
+  width: 60%;
+  animation: slide-in-down-top-1 1000ms;
+}
+@keyframes slide-in-down-top-1 {
+  from {
+    transform: translateY(-100%);
+    opacity: 0.25;
+  }
+  to {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+/* Estilo da div direita da app */
+.main {
+  height: 70%;
+  width: auto;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 0 5px 5px 0;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  animation: slide-down-top-2 1000ms;
+}
+@keyframes slide-down-top-2 {
+  from {
+    transform: translateY(-100%);
+    opacity: 0.25;
+  }
+  to {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+ul.main {
+  padding: 0;
+}
+
+.main span {
+  font-size: 35px;
+  border-radius: 50%;
+  background-color: #fff;
+  padding: 5px;
+  border: solid #a8a8a8 0.5px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+/* Layout responsivo da app */
+@media (max-width: 425px) {
+  .home.container-fluid.d-flex.flex-row.justify-content-center {
+    flex-direction: column !important;
+  }
+  .title {
+    width: 100%;
+    max-height: 100%;
+    border-radius: 5px 5px 0 0;
+  }
+  .main {
+    width: 100%;
+    height: 70px;
+    font-size: 20px;
+    border-radius: 0 0 5px 5px;
+  }
+}
+.main span {
+  font-size: 30px;
+}

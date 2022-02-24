@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="keywords"
+      content="saúde, esporte, corrida, monitoramento, ciclismo"
+    />
+    <!-- App CSS -->
+    <link rel="stylesheet" href="./record.css" />
+    <link rel="stylesheet" href="../../shared/shared.css" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- Google Icon -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <title>:.Health Track.:</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <div class="logo">
+          <p>
+            Health Track<small class="runIcon material-icons">
+              directions_run</small
+            >
+          </p>
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link text-success fw-bold"
+                aria-current="page"
+                href="../profile/profile.html"
+                >Perfil <span class="material-icons">manage_accounts</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active disabled text-secondary fw-bold"
+                href="#"
+                >Gravar
+                <span class="material-icons">radio_button_checked</span></a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a
+                class="nav-link text-success fw-bold"
+                href="../dashboard/dashboard.html"
+                >Dashboard
+                <span class="material-icons">space_dashboard</span></a
+              >
+            </li>
+            <li class="nav-item dropdown dropstart">
+              <a
+                class="nav-link text-success fw-bold"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Sair <span class="material-icons">logout</span></a
+              >
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a
+                    class="fw-bold text-success dropdown-item"
+                    href="../../index.html"
+                    >Sim</a
+                  >
+                </li>
+                <li>
+                  <a class="fw-bold text-danger dropdown-item" href="#">Não</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section
+      class="home container-fluid d-flex flex-row justify-content-center"
+    >
+      <header
+        id="map"
+        class="title d-flex flex-column align-items-center align-self-center"
+      ></header>
+      <ul
+        class="controls main nav justify-content-center d-flex flex-column align-self-center"
+      >
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#"
+            ><span class="material-icons"> directions_run </span></a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"
+            ><span class="material-icons"> pool </span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"
+            ><span class="material-icons"> directions_bike </span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"
+            ><span class="material-icons text-danger">
+              radio_button_checked
+            </span></a
+          >
+        </li>
+      </ul>
+    </section>
+
+    <!-- Google Maps API -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC0P_pIDm0DzuYJ8l11IgyoK0LvDTRzpkY&callback=initMap&libraries=&v=weekly"
+      async
+    ></script>
+    <!-- App JS -->
+    <script src="./record.js"></script>
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="keywords"
+      content="saúde, esporte, corrida, monitoramento, ciclismo"
+    />
+    <!-- App CSS -->
+    <link rel="stylesheet" href="../../shared/shared.css" />
+    <link rel="stylesheet" href="./profile.css" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- Google Icon -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <title>:.Health Track.:</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <div class="logo">
+          <p>
+            Health Track<small class="runIcon material-icons">
+              directions_run</small
+            >
+          </p>
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active disabled text-secondary fw-bold"
+                aria-current="page"
+                href="#"
+                >Perfil <span class="material-icons">manage_accounts</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-success fw-bold"
+                href="../record/record.html"
+                >Gravar
+                <span class="material-icons">radio_button_checked</span></a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a
+                class="nav-link text-success fw-bold"
+                href="../dashboard/dashboard.html"
+                >Dashboard
+                <span class="material-icons">space_dashboard</span></a
+              >
+            </li>
+            <li class="nav-item dropdown dropstart">
+              <a
+                class="nav-link text-success fw-bold"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Sair <span class="material-icons">logout</span></a
+              >
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a
+                    class="fw-bold text-success dropdown-item"
+                    href="../../index.html"
+                    >Sim</a
+                  >
+                </li>
+                <li>
+                  <a class="fw-bold text-danger dropdown-item" href="#">Não</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section
+      class="home container-fluid d-flex flex-row justify-content-center"
+    >
+      <form
+        class="main d-flex flex-column align-self-center"
+        action="../record/record.html"
+      >
+        <header class="avatar d-flex flex-row align-self-center">
+          <!-- foto perfil-->
+          <figure class="text-center d-flex flex-column align-self-center">
+            <img
+              id="display_image"
+              class="avatar"
+              src="/assets/img/avatar.png"
+            />
+            <label
+              for="imageInput"
+              class="avatarFile form-label"
+              title="escolha uma foto de perfil"
+              >ALTERAR</label
+            >
+            <input
+              class="avatarFile form-control form-control-sm d-none"
+              id="imageInput"
+              type="file"
+            />
+          </figure>
+        </header>
+        <!--nome, sobrenome, cidade e estado-->
+        <div class="row">
+          <div class="col-12 col-sm-12 col-md-6">
+            <label for="" class="form-label">Nome</label>
+            <input type="text" class="form-control" id="nomeUsuario" />
+          </div>
+          <div class="col-12 col-sm-12 col-md-6">
+            <label for="" class="form-label">Sobrenome</label>
+            <input type="text" class="form-control" id="sobrenomeUsuario" />
+          </div>
+          <div class="col-12 col-sm-12 col-md-6">
+            <label for="" class="form-label">Cidade</label>
+            <input type="text" class="form-control" id="cidadeUsuario" />
+          </div>
+
+          <div class="col-12 col-sm-12 col-md-6">
+            <label for="" class="form-label">Estado</label>
+            <select
+              id="UF"
+              name="UF"
+              class="form-select"
+              aria-label="Default select example"
+            >
+              <option selected disabled>Selecione</option>
+              <option value="AC">Acre</option>
+              <option value="AL">Alagoas</option>
+              <option value="AP">Amapá</option>
+              <option value="AM">Amazonas</option>
+              <option value="BA">Bahia</option>
+              <option value="CE">Ceará</option>
+              <option value="DF">Distrito Federal</option>
+              <option value="ES">Espirito Santo</option>
+              <option value="GO">Goiás</option>
+              <option value="MA">Maranhão</option>
+              <option value="MS">Mato Grosso do Sul</option>
+              <option value="MT">Mato Grosso</option>
+              <option value="MG">Minas Gerais</option>
+              <option value="PA">Pará</option>
+              <option value="PB">Paraíba</option>
+              <option value="PR">Paraná</option>
+              <option value="PE">Pernambuco</option>
+              <option value="PI">Piauí</option>
+              <option value="RJ">Rio de Janeiro</option>
+              <option value="RN">Rio Grande do Norte</option>
+              <option value="RS">Rio Grande do Sul</option>
+              <option value="RO">Rondônia</option>
+              <option value="RR">Roraima</option>
+              <option value="SC">Santa Catarina</option>
+              <option value="SP">São Paulo</option>
+              <option value="SE">Sergipe</option>
+              <option value="TO">Tocantins</option>
+            </select>
+          </div>
+        </div>
+        <!--data de nascimento, sexo e peso-->
+        <div class="row">
+          <div class="col-12 col-sm-4">
+            <label for="" class="form-label">Dt. Nasc.</label>
+            <input type="date" class="form-control" id="dataNascimento" />
+          </div>
+          <div class="col-12 col-sm-4">
+            <label for="" class="form-label">Sexo</label>
+            <select
+              id="sexo"
+              name="sexo"
+              class="form-select"
+              aria-label="Default select example"
+            >
+              <option selected disabled>Selecione</option>
+              <option value="M">Masculino</option>
+              <option value="F">Feminino</option>
+              <option value="O">Outros</option>
+            </select>
+          </div>
+          <div class="col-12 col-sm-4">
+            <label for="" class="form-label">Peso</label>
+            <input
+              type="text"
+              class="form-control"
+              id="dataNascimento"
+              placeholder="Kg"
+            />
+          </div>
+          <label for="" class="form-label">Meta</label>
+          <div class="meta col-12">
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="radio"
+                id="inlineradio1"
+                value="2"
+              />
+              <label class="form-check-label" for="inlineradio1">2 km</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="radio"
+                id="inlineradio1"
+                value="5"
+              />
+              <label class="form-check-label" for="inlineradio1">5 km</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="radio"
+                id="inlineradio2"
+                value="10"
+                checked
+              />
+              <label class="form-check-label" for="inlineradio2">10 km</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="radio"
+                id="inlineradio3"
+                value="21.1"
+              />
+              <label class="form-check-label" for="inlineradio3"
+                >Meia maratona</label
+              >
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="radio"
+                id="inlineradio3"
+                value="42"
+              />
+              <label class="form-check-label" for="inlineradio3"
+                >Maratona</label
+              >
+            </div>
+          </div>
+
+          <div class="d-flex flex-row-reverse">
+            <button type="submit" class="btn btn-primary">Concluido</button>
+          </div>
+        </div>
+      </form>
+    </section>
+
+    <!-- App JS -->
+    <script src="./profile.js"></script>
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

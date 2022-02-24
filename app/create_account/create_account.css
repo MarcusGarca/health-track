@@ -1,0 +1,73 @@
+/* Altura da div princincipal da app */
+.home {
+  height: 100vh;
+}
+
+/* Estilo da div esquerda da app */
+.title {
+  animation: slide-in 1000ms;
+}
+@keyframes slide-in {
+  from {
+    transform: translateX(-100%);
+    opacity: 0.25;
+  }
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+/* Estilo da div direita da app */
+.main {
+  width: 40%;
+  height: 70%;
+  justify-content: center;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  animation: slide-down-top 1000ms;
+}
+@keyframes slide-down-top {
+  from {
+    transform: translateY(-100%);
+    opacity: 0.25;
+  }
+  to {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+.main small {
+  font-weight: 500;
+  font-style: italic;
+  box-shadow: none;
+  background-color: transparent;
+}
+
+/*Estilo dos checknox da app */
+.form-check {
+  margin: 10px 0 10px 0;
+}
+
+/* Estilo botão subimit */
+.btn {
+  margin: 10px 0 10px 0;
+}
+
+/* Layout responsivo da app */
+@media (max-width: 425px) {
+  .home.container-fluid.d-flex.flex-row.justify-content-around {
+    flex-direction: column !important;
+  }
+  .main {
+    width: 100%;
+    animation: none;
+  }
+  .title {
+    animation: none;
+  }
+}

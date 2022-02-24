@@ -1,0 +1,71 @@
+/* Altura da div principial da app */
+.home {
+  min-height: calc(100vh - 58px);
+}
+
+/* Estilo da div que comporta a imagem do usuário da app */
+.avatarFile {
+  font-size: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.avatarFile:hover {
+  color: #525252;
+}
+.avatar img {
+  width: 80px;
+  height: 80px;
+  background: #fff;
+  border-radius: 50%;
+  border: #d3d0d0 solid 0.1px;
+}
+.avatar img:hover {
+  opacity: 0.5px;
+}
+
+/* Estilo da div direita da app */
+.main {
+  height: 90%;
+  width: 50%;
+  justify-content: center;
+  margin: 10px 0 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  animation: slide-down-top 1000ms;
+}
+@keyframes slide-down-top {
+  from {
+    transform: translateY(-100%);
+    opacity: 0.25;
+  }
+  to {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+/* Estilo botão submit da app*/
+.btn {
+  margin: 10px 0 10px 0;
+}
+
+/* Layout responsivo da app */
+@media (max-width: 425px) {
+  .home.container-fluid.d-flex.flex-row.justify-content-around {
+    flex-direction: column !important;
+  }
+
+  .main {
+    width: 100%;
+    height: auto;
+    margin: 10px 0 10px 0;
+    animation: none;
+  }
+  .home {
+    height: auto;
+  }
+}
