@@ -102,14 +102,55 @@
       </div>
     </nav>
     <section
-      class="home container-fluid d-flex flex-row justify-content-around"
+      class="home container-fluid d-flex flex-row justify-content-between"
     >
-      <div
-        class="main d-flex flex-row align-self-center justify-content-between"
-      >
+      <section class="chart d-flex align-self-center justify-content-start">
         <div id="chartContainer"></div>
-      </div>
+      </section>
+
+      <section class="main d-flex flex-column align-self-center">
+        <div class="imc">
+          <label for="">Seu IMC: <span>27.76</span></label>
+        </div>
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th scope="col">IMC</th>
+              <th scope="col">Classificação</th>
+              <th scope="col">Obesidade (Grau)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>MENOR QUE 18,5</td>
+              <td>MAGREZA</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>ENTRE 18,5 E 24,9</td>
+              <td>NORMAL</td>
+              <td>0</td>
+            </tr>
+            <tr class="text-danger fw-bold">
+              <td>ENTRE 25,0 E 29,9</td>
+              <td>SOBREPESO</td>
+              <td>I</td>
+            </tr>
+            <tr>
+              <td>ENTRE 30,0 E 39,9</td>
+              <td>OBESIDADE</td>
+              <td>II</td>
+            </tr>
+            <tr>
+              <td>MAIOR QUE 40,0</td>
+              <td>OBESIDADE GRAVE</td>
+              <td>III</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
     </section>
+
     <!-- Google Chart JS -->
     <script
       type="text/javascript"
