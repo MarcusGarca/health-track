@@ -1,7 +1,7 @@
 /* Altura da div princincipal da app */
 .home {
   height: calc(100vh - 58px);
-  width: 100vw;
+  width: 100%;
 }
 /* Estilo da div que comporta o gráfico */
 .chart {
@@ -71,11 +71,10 @@ table {
 @media (max-width: 425px) {
   .home.container-fluid.d-flex.flex-row.justify-content-between {
     flex-direction: column !important;
+    justify-content: space-evenly !important;
+    height: 100%;
   }
 
-  .home {
-    height: auto;
-  }
   .chart {
     width: 100%;
     animation: none;
